@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: black;
+    width: 100%;
+}
+
+.navbar h1 {
+    font-size: x-large;
+    color: white;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar h1 {
+        font-size: medium;
+    }
+}
+
+.player-stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.player-stats-container p {
+    font-size: medium;
+    color: white;
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .player-stats-container p {
+        font-size: small;
+    }
+}
+
+.player-stats-container .stats {
+    padding: 7px 13px 7px 13px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 25px;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.card img {
+    width: 30%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+        padding: 25px;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card img {
+        width: 50%;
+        border-radius: 5px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 480px) {
+    footer p {
+        font-size: small;
+    }
+}
